@@ -92,6 +92,10 @@ bool LSMIPC::Initialize(LSInterface *p_LSInterface)
     RegisterTriggers();
 
 	pLSInterface->AttachEventTarget(pIPCIndexEvent, IPCIndexEvent);
+	pLSInterface->AttachEventTarget(pIPCSetEvent, IPCSetEvent);
+	pLSInterface->AttachEventTarget(pIPCCollectionEvent, IPCCollectionEvent);
+	pLSInterface->AttachEventTarget(pIPCQueueEvent, IPCQueueEvent);
+	pLSInterface->AttachEventTarget(pIPCStackEvent, IPCStackEvent);
 
 	printf("LSMIPC version %s Loaded",IPC_Version);
 	return true;

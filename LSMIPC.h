@@ -59,6 +59,7 @@ void IPCIndexEvent(int argc, char** argv, PLSOBJECT Object);
 void IPCQueueEvent(int argc, char** argv, PLSOBJECT Object);
 void IPCSetEvent(int argc, char** argv, PLSOBJECT Object);
 void IPCCollectionEvent(int argc, char** argv, PLSOBJECT Object);
+void IPCStackEvent(int argc, char** argv, PLSOBJECT Object);
 
 #include "Commands.h"
 #include "DataTypes.h"

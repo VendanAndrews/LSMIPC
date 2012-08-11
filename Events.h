@@ -18,6 +18,10 @@
  */
 
 EVENT("IPCIndex", pIPCIndexEvent);
+EVENT("IPCSet", pIPCSetEvent);
+EVENT("IPCCollection", pIPCCollectionEvent);
+EVENT("IPCQueue", pIPCQueueEvent);
+EVENT("IPCStack", pIPCStackEvent);
 
 
 
