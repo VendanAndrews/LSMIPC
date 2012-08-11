@@ -63,7 +63,6 @@ local.properties
 .builds
 *.dotCover
 *.filters
-*.vcxproj
 *.tlog
 *.exp
 *.manifest
