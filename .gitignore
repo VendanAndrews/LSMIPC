@@ -62,7 +62,6 @@ local.properties
 *.vspscc
 .builds
 *.dotCover
-*.vcproj
 *.filters
 *.vcxproj
 *.tlog
@@ -71,7 +70,6 @@ local.properties
 *.log
 *.lib
 *.lastbuildstate
-*.sln
 
 ## TODO: If you have NuGet Package Restore enabled, uncomment this
 #packages/
