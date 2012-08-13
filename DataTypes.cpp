@@ -1490,10 +1490,16 @@ bool IPCCollectionType::GetMember(LSOBJECTDATA ObjectData, PLSTYPEMEMBER pMember
 		if (argc)
 		{
 			LSOBJECT item;
-			pCollection->Collection->GetItem(argv[0], item);
-			Object.Type = item.Type;
-			Object.DWord = item.DWord;
-			return true;
+			if(pCollection->Collection->GetItem(argv[0], item))
+			{
+				Object.Type = item.Type;
+				Object.DWord = item.DWord;
+				return true;
+			}
+			else
+			{
+				return false;
+			}
 		}
 		return false;
 	}
