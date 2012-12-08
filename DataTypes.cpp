@@ -310,7 +310,7 @@ void IndexRelay(char* name, char* type, char* subtype, char* method, int argc, c
 		}
 	}
 	*writer = 0;
-	printf("%s", command);
+//	printf("%s", command);
 	pLSInterface->ExecuteCommand(command);
 	free(command);
 }
@@ -439,7 +439,7 @@ void QueueRelay(char* name, char* type, char* subtype, char* method, int argc, c
 		}
 	}
 	*writer = 0;
-	printf("%s", command);
+//	printf("%s", command);
 	pLSInterface->ExecuteCommand(command);
 	free(command);
 }
@@ -556,7 +556,7 @@ void SetRelay(char* name, char* method, int argc, char** argv)
 		}
 	}
 	*writer = 0;
-	printf("%s", command);
+//	printf("%s", command);
 	pLSInterface->ExecuteCommand(command);
 	free(command);
 }
@@ -685,7 +685,7 @@ void CollectionRelay(char* name, char* type, char* subtype, char* method, int ar
 		}
 	}
 	*writer = 0;
-	printf("%s", command);
+//	printf("%s", command);
 	pLSInterface->ExecuteCommand(command);
 	free(command);
 }
@@ -814,7 +814,7 @@ void StackRelay(char* name, char* type, char* subtype, char* method, int argc, c
 		}
 	}
 	*writer = 0;
-	printf("%s", command);
+//	printf("%s", command);
 	pLSInterface->ExecuteCommand(command);
 	free(command);
 }
