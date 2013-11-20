@@ -832,7 +832,7 @@ void IPCIndexEvent(int argc, char** argv, PLSOBJECT Object)
 		indexobject.Ptr = new LSIndex(Type, SubType);
 		AddIndex(Name, (LSIndex*)indexobject.Ptr);
 	}
-	pIndexType->GetMethodEx(indexobject.ObjectData, Method, argc-4, &argv[4]);
+	pIndexType->GetMethodEx(indexobject.GetObjectData(), Method, argc-4, &argv[4]);
 }
 
 void IPCQueueEvent(int argc, char** argv, PLSOBJECT Object)
@@ -848,7 +848,7 @@ void IPCQueueEvent(int argc, char** argv, PLSOBJECT Object)
 		queueobject.Ptr = new LSQueue(Type, SubType);
 		AddQueue(Name, (LSQueue*)queueobject.Ptr);
 	}
-	pQueueType->GetMethodEx(queueobject.ObjectData, Method, argc-4, &argv[4]);
+	pQueueType->GetMethodEx(queueobject.GetObjectData(), Method, argc - 4, &argv[4]);
 }
 
 void IPCSetEvent(int argc, char** argv, PLSOBJECT Object)
@@ -862,7 +862,7 @@ void IPCSetEvent(int argc, char** argv, PLSOBJECT Object)
 		setobject.Ptr = new LSSet();
 		AddSet(Name, (LSSet*)setobject.Ptr);
 	}
-	pSetType->GetMethodEx(setobject.ObjectData, Method, argc-2, &argv[2]);
+	pSetType->GetMethodEx(setobject.GetObjectData(), Method, argc - 2, &argv[2]);
 }
 
 void IPCCollectionEvent(int argc, char** argv, PLSOBJECT Object)
@@ -878,7 +878,7 @@ void IPCCollectionEvent(int argc, char** argv, PLSOBJECT Object)
 		collectionobject.Ptr = new LSObjectCollection(Type, SubType);
 		AddCollection(Name, (LSObjectCollection*)collectionobject.Ptr);
 	}
-	pCollectionType->GetMethodEx(collectionobject.ObjectData, Method, argc-4, &argv[4]);
+	pCollectionType->GetMethodEx(collectionobject.GetObjectData(), Method, argc - 4, &argv[4]);
 }
 
 void IPCStackEvent(int argc, char** argv, PLSOBJECT Object)
@@ -894,7 +894,7 @@ void IPCStackEvent(int argc, char** argv, PLSOBJECT Object)
 		Stackobject.Ptr = new LSStack(Type, SubType);
 		AddStack(Name, (LSStack*)Stackobject.Ptr);
 	}
-	pStackType->GetMethodEx(Stackobject.ObjectData, Method, argc-4, &argv[4]);
+	pStackType->GetMethodEx(Stackobject.GetObjectData(), Method, argc - 4, &argv[4]);
 }
 
 #pragma region Index
